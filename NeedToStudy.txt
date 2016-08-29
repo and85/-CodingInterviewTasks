@@ -3,3 +3,4 @@
 3. 1.6 - was too tired to think :)
 4. 3.4 - my favorite hanoi tower :)
 5. fuzzy search of strings
+6. Resolving circular dependencies in different data structures, i.e. in lists (2.5)
