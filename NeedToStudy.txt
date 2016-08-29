@@ -1,0 +1,5 @@
+1. Bit manipulations
+2. writing unsafe code, pointers, etc.
+3. 1.6 - was too tired to think :)
+4. 3.4 - my favorite hanoi tower :)
+5. fuzzy search of strings
