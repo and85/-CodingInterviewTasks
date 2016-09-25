@@ -7,3 +7,4 @@
 6. Resolving circular dependencies in different data structures, i.e. in lists (2.5)
 7. Write an application that manages memory allocation
 8. https://habrahabr.ru/post/261159/
+9. Bit shifting with a negative number, operations with flags, masks

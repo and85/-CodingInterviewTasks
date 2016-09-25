@@ -30,7 +30,7 @@ namespace ConsoleApplication1
         }
 
         /// <summary>
-        /// Time complexity O(n/2), memory usage O(3n)
+        /// Time complexity O(n/2), memory usage O(n)
         /// </summary>
         private static string ReverseString(string input)
         {
