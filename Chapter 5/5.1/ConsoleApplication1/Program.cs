@@ -25,10 +25,27 @@ namespace ConsoleApplication1
             //int masked_n = M & mask;
             //int thebit = masked_n >> bitIndex;
 
+            //int N = MySolution();
             int N = Convert.ToInt32("10000000000", 2);
             int M = Convert.ToInt32("10101", 2);
+
             int i = 2;
             int j = 6;
+
+            //N = MySolution(N, M);
+            N = updateBits(N, M, i, j);
+
+            //updateBits
+
+            Console.WriteLine(N);
+            Console.WriteLine("END");
+            Console.ReadKey();
+        }
+
+        private static int MySolution(int N, int M, int i, int j)
+        {
+            
+            
             int mIndex = 0;
 
             for (int bitIndex = i; bitIndex <= j; bitIndex++)
@@ -43,9 +60,24 @@ namespace ConsoleApplication1
                 mIndex++;
             }
 
-            Console.WriteLine(N);
-            Console.WriteLine("END");
-            Console.ReadKey();
+            return N;
+        }
+
+        public static int updateBits(int n, int m, int i, int j)
+        {
+            int max = ~0; /* All 1’s */
+
+            // 1’s through position j, then 0’s 
+            int left = max - ((1 << j) - 1);
+
+            // 1’s after position i 
+            int right = ((1 << i) - 1);
+
+            // 1’s, with 0s between i and j 
+            int mask = left | right;
+
+            // Clear i through j, then put m in there 
+            return (n & mask) | (m << i);
         }
     }
 }
