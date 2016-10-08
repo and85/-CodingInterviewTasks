@@ -8,3 +8,4 @@
 7. Write an application that manages memory allocation
 8. https://habrahabr.ru/post/261159/
 9. Bit shifting with a negative number, operations with flags, masks
+10. C# matrix rotation algorithms
